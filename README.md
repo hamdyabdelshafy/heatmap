@@ -4,8 +4,8 @@
 ### Date: July 2024
 ### Affiliation: Department of Animal Production, Cairo University, Faculty of Agriculture
 
-## This project demonstrates how to generate and plot heatmaps for bile acid classes and individual bile acids using simulated data. 
-## The heatmaps are plotted side by side and saved as an image file.
+This project demonstrates how to generate and plot heatmaps for bile acid classes and individual bile acids using simulated data. 
+The heatmaps are plotted side by side and saved as an image file.
 
 ## Prerequisites
 
@@ -18,8 +18,9 @@ install.packages("grid")
 ## Data Preparation
 
 Before running the plotting script, you need to have the simulated data saved in CSV files. 
-If you don't have these files yet, you can generate and save them using the following code:
-
+The simulated data already provided here in two csv files.
+If you need to generate the data by your self you can use the following r code:
+```
 # Generate simulated data for bile acid classes (a)
 ba_classes <- matrix(rnorm(200), nrow = 10, ncol = 20)
 rownames(ba_classes) <- c("Hydrophilic BA", "Tauro BA", "Total BA", "Free BA", 
@@ -38,7 +39,7 @@ colnames(individual_ba) <- paste0("Strain", 1:20)
 # Save the simulated data to CSV files
 write.csv(ba_classes, "ba_classes.csv", row.names = TRUE)
 write.csv(individual_ba, "individual_ba.csv", row.names = TRUE)
-
+```
 
 
 ## Explanation for the provided r code (heatmap_imported_Data.r)
@@ -68,7 +69,6 @@ write.csv(individual_ba, "individual_ba.csv", row.names = TRUE)
 
 This project provides a simple example of how to generate and visualize heatmaps using simulated data. 
 The steps are well-documented to help beginners understand the process and reproduce the results.
-
 Feel free to modify the code and experiment with different datasets and visualization options.
 
 
