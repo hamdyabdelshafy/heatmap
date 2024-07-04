@@ -4,8 +4,8 @@
 ### Date: July 2024
 ### Affiliation: Department of Animal Production, Cairo University, Faculty of Agriculture
 
-# This project demonstrates how to generate and plot heatmaps for bile acid classes and individual bile acids using simulated data. 
-# The heatmaps are plotted side by side and saved as an image file.
+## This project demonstrates how to generate and plot heatmaps for bile acid classes and individual bile acids using simulated data. 
+## The heatmaps are plotted side by side and saved as an image file.
 
 ## Prerequisites
 
